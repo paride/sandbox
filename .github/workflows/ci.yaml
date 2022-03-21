@@ -1,12 +1,12 @@
----
-
-name: continuous-integration
-
-on:
-  pull_request:
-
-jobs:
-  lint-and-style:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo FOO
+#---
+#
+#name: continuous-integration
+#
+#on:
+#  pull_request:
+#
+#jobs:
+#  lint-and-style:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - run: echo FOO
