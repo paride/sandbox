@@ -1,0 +1,24 @@
+---
+
+name: Fooflow
+
+on:
+  push:
+
+defaults:
+  run:
+    shell: sh -ex {0}
+
+jobs:
+  job1:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: FooStepName1
+        run: echo job1
+  job2:
+    name: FooJob2
+    runs-on: ubuntu-20.04
+    steps:
+      - name: FooStepName2
+        run: echo job2
+
