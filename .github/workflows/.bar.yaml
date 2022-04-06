@@ -1,0 +1,17 @@
+---
+
+name: FooflowHIDDEN
+
+on:
+  push:
+
+defaults:
+  run:
+    shell: sh -ex {0}
+
+jobs:
+  job1HIDDEN:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: FooStepName1
+        run: echo job1
